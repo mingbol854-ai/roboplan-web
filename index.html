@@ -4,26 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>机械臂动作自动规划智能体</title>
-    
-    <script>
-        // 瞬间将当前窗口替换为真实的系统地址，不在浏览器留下多余的返回历史
-        window.location.replace("https://runtime.mobiapp.cloud/178273961186117/apps/178273990960554");
-    </script>
-
     <style>
-        /* 极简纯净的底层样式（仅在老师网络极度卡顿时闪现0.5秒） */
-        body, html { 
-            margin: 0; padding: 0; width: 100%; height: 100%; 
-            background-color: #ffffff; /* 纯净白底 */
-            display: flex; align-items: center; justify-content: center;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        body {
+            margin: 0; padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            height: 100vh; text-align: center;
         }
-        .status-text {
-            font-size: 14px; color: #64748b; letter-spacing: 1px;
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px; border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            max-width: 800px; width: 90%;
         }
+        h1 { font-size: 32px; margin-bottom: 10px; color: #fff; }
+        h2 { font-size: 18px; font-weight: normal; margin-bottom: 40px; color: #ccc; }
+        .features { text-align: left; margin: 0 auto 40px; max-width: 500px; line-height: 1.8; color: #eee; }
+        .btn {
+            display: inline-block;
+            background: #0066ff; color: white;
+            padding: 15px 40px; font-size: 18px; font-weight: bold;
+            text-decoration: none; border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.4);
+        }
+        .btn:hover { background: #0052cc; transform: translateY(-2px); }
+        .footer { margin-top: 30px; font-size: 12px; color: #888; }
     </style>
 </head>
 <body>
-    <div class="status-text">System Connecting...</div>
+    <div class="container">
+        <h1>机械臂动作自动规划智能体</h1>
+        <h2>基于 Qwen-VL 多模态大模型的视觉感知与路径规划系统</h2>
+        
+        <div class="features">
+            <strong>核心功能：</strong><br>
+            • 低光照与复杂遮挡场景下的多模态视觉解析<br>
+            • 自然语言指令至离散抓取动作的逻辑拆解<br>
+            • ROS / C++ 环境下底层控制逻辑的伪代码生成<br>
+            • 基于运动学约束的奇异点预警与避障提示
+        </div>
+
+        <a href="https://runtime.mobiapp.cloud/178273961186117/apps/178273990960554" target="_blank" class="btn">
+            🚀 启动智能体系统
+        </a>
+        
+        <div class="footer">
+            <p>Powered by 阿里云百炼 Agent Framework | 江汉大学智能制造学院</p>
+        </div>
+    </div>
 </body>
 </html>
